@@ -8,6 +8,7 @@
   const rewrite=()=>{
     document.querySelectorAll('a[href]').forEach(a=>{
       const href=a.getAttribute('href');
+      if(href===base){a.setAttribute('href',base+'/');return;}
       if(href && href.startsWith('/') && !href.startsWith('//') && !href.startsWith(base+'/'))a.setAttribute('href',base+href);
     });
   };
