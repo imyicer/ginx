@@ -1,0 +1,6 @@
+/trading /upgrade/ 302
+/trading/* /upgrade/ 302
+/login /upgrade/ 302
+/login/* /upgrade/ 302
+/trade/* /upgrade/ 302
+/* /index.html 200

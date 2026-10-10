@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>PermanentRedirect</Code><Message>The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.</Message><Endpoint>ginfx-prod.s3-ap-southeast-1.amazonaws.com</Endpoint><Bucket>ginfx-prod</Bucket><RequestId>XVRC91586QFX4STM</RequestId><HostId>yJwKRq7VRsApWRZDOjhaV3KZhJcX5lYKRMl1SUFB7LTcpE8StWZ3WXx4Mu4SeX8UMf1etF/M0ZVtqmUpkZzCAhqXbaXOQ9Fl</HostId></Error>

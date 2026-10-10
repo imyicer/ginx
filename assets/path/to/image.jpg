@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" translate="no" class="notranslate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/home-landing/assets/42b3aa4b-cc9b-457b-9f70-25b6a28bb507.png"
+      fetchpriority="high"
+    />
+    <script>
+      if (window.location.pathname === "/") {
+        const particleRuntimePreload = document.createElement("link");
+        particleRuntimePreload.rel = "preload";
+        particleRuntimePreload.as = "script";
+        particleRuntimePreload.href =
+          "/images/particle-logo-core/16f8709d-4cd0-413c-a211-810e4b96348e.js";
+        particleRuntimePreload.fetchPriority = "high";
+        document.head.appendChild(particleRuntimePreload);
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+    <title id="app-initial-title">GinX | Omni-Asset On-Chain Derivatives Platform</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ginx.io/" />
+    <meta property="og:title" content="GinX | Omni-Asset On-Chain Derivatives Platform" />
+    <meta property="og:description" content="Welcome to GinX, where traditional financial liquidity meets Web3 innovation. We offer comprehensive trading for Forex, CFDs, Cryptocurrencies, and Real-World Assets (RWA)." />
+    <meta property="og:site_name" content="GinX" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="GinX | Omni-Asset On-Chain Derivatives Platform">
+    <meta property="og:image" content="https://www.ginx.io/images/og/og-image.png?2026920" />
+    <script  
+      type="text/javascript"
+      src="/tradingview/charting_library/charting_library.standalone.js" defer>
+    </script>
+    <script type="module" crossorigin src="/assets/index-DPxXcm6g.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BGk5E0He.css">
+  </head>
+  <body translate="no" class="notranslate">
+    <div id="root" translate="no" class="notranslate"></div>
+  </body>
+</html>

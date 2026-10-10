@@ -1,0 +1,1 @@
+const e={title:"GinX | 全资产链上衍生品平台",description:"欢迎来到 GinX.io，在这里传统金融流动性与 Web3 创新相结合。我们提供外汇、CFD、加密货币和真实世界资产（RWA）的综合交易服务，并通过深度流动性和高级社交交易功能赋能你的投资策略。",keywords:["GinX","全资产","链上衍生品","Web3 交易平台","社交交易","合成 RWA","加密货币","外汇交易","CFD"]},o={home:e};export{o as default,e as home};

@@ -1,0 +1,1 @@
+import{cN as r,cX as c}from"./index-DPxXcm6g.js";import{S as o}from"./SearchIcon-CBo9SW7j.js";function p({placeholder:s="Search",iconClassName:t,...a}){return r.jsx(c,{...a,inputMode:"search",placeholder:s,startIcon:r.jsx(o,{className:t})})}export{p as S};
