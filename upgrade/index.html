@@ -7,18 +7,28 @@
 <link rel="icon" href="/ginx/favicon.ico"><link rel="preload" href="/ginx/upgrade-assets/manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/ginx/upgrade-assets/original.css"><link rel="stylesheet" href="/ginx/upgrade-assets/maintenance.css">
 <script src="/ginx/upgrade-assets/three-runtime.js" defer></script><script src="/ginx/upgrade-assets/animation.js" defer></script>
+<script src="/ginx/upgrade-assets/languages.js" defer></script>
 </head>
 <body><main class="landing maintenance">
 <section class="hero" aria-labelledby="upgrade-title">
 <canvas class="network-canvas" id="network" aria-hidden="true"></canvas>
 <div class="brand-only"><img src="/ginx/upgrade-assets/logo.png" alt="GinX — Growth Infinity" width="160" height="96"></div>
+<label class="upgrade-language">
+<svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg>
+<select id="upgrade-language" aria-label="Language"><option value="en">English</option><option value="ja">日本語</option><option value="ru">Русский</option><option value="vi">Tiếng Việt</option><option value="zh-cn">简体中文</option><option value="zh-tw">繁體中文</option></select>
+</label>
 <div class="shell hero-grid">
 <div class="hero-content">
-<p class="upgrade-label">SYSTEM UPGRADE IN PROGRESS</p>
-<h1 class="hero-headline" id="upgrade-title"><span class="headline-main">We're upgrading.</span><span class="headline-accent">Stay tuned.</span></h1>
-<p class="hero-copy">We're making a major upgrade to our systems.</p>
-<p class="service-notice">Trading services are temporarily suspended<br class="desktop-break"> during the upgrade.</p>
-<p class="thanks">Thank you for your patience. We look forward to welcoming you back.</p>
+<p class="upgrade-label" data-i18n="label">SYSTEM UPGRADE IN PROGRESS</p>
+<h1 class="hero-headline" id="upgrade-title"><span class="headline-main" data-i18n="headline">We're upgrading.</span><span class="headline-accent" data-i18n="stay">Stay tuned.</span></h1>
+<p class="hero-copy" data-i18n="intro">We're making a major upgrade to our systems.</p>
+<p class="service-notice" data-i18n="paused">Trading services are temporarily suspended during the upgrade.</p>
+<div class="service-notice asset-notice">
+<p class="assets-safe" data-i18n="assets">All users’ existing assets remain unaffected.</p>
+<p><span data-i18n="withdrawBefore">If you need to withdraw funds during the upgrade, please contact our support team at </span><a href="mailto:info@ginx.io">info@ginx.io</a><span data-i18n="withdrawAfter"> from your </span><strong data-i18n="registered">registered email address</strong><span data-i18n="withdrawEnd">.</span></p>
+<p class="withdraw-open" data-i18n="available">Our withdrawal channels will remain available throughout the upgrade.</p>
+</div>
+<p class="thanks" data-i18n="thanks">Thank you for your patience. We look forward to welcoming you back.</p>
 </div>
 <div class="hero-art" aria-hidden="true"><div class="particle-logo-core hex-core" data-hex-core data-hex-camera-z="7">
 <canvas class="particle-logo-core__canvas hex-core-canvas" id="hexLogoScene" data-particle-logo-canvas></canvas>
@@ -26,5 +36,5 @@
 <div class="particle-logo-core__logo-fallback hex-logo-fallback"><img src="/ginx/upgrade-assets/logo.png" alt=""></div><div class="particle-logo-core__scanline hex-scanline"></div>
 </div></div>
 </div>
-<p class="maintenance-footer">© 2026 GinX. All rights reserved.</p>
+<p class="maintenance-footer" data-i18n="footer">© 2026 GinX. All rights reserved.</p>
 </section></main></body></html>
