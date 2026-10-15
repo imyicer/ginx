@@ -51,6 +51,9 @@
     return messages[code.split('-')[0]] ? code.split('-')[0] : null;
   };
   const select = document.getElementById('upgrade-language');
+  window.GinxUpgradeMessages = messages;
+  window.ginxUpgradeLanguage = normalize;
+  if (!select) return;
   const apply = code => {
     const text = messages[code];
     document.documentElement.lang = code;

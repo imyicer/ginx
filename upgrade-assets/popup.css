@@ -1,0 +1,16 @@
+#ginx-upgrade-popup{width:min(700px,calc(100vw - 32px));max-width:none;max-height:calc(100dvh - 32px);padding:0;border:1px solid #8b642e70;border-radius:18px;color:#eeeef1;background:radial-gradient(ellipse at 10% 0%,#38281075,transparent 55%),#08090b;box-shadow:0 24px 100px #000b;font-family:Manrope,Arial,sans-serif;overflow:auto;overscroll-behavior:contain}
+#ginx-upgrade-popup::backdrop{background:#000b;backdrop-filter:blur(7px)}
+#ginx-upgrade-popup *{box-sizing:border-box}
+#ginx-upgrade-popup .gx-close-row{position:sticky;top:0;height:64px;display:flex;justify-content:flex-end;align-items:center;padding:8px 12px;z-index:1;background:linear-gradient(#0d0c0bf5,#0d0c0bcc,transparent)}
+#ginx-upgrade-popup .gx-close{display:grid;place-items:center;width:48px;height:48px;padding:0;flex-shrink:0;border:1px solid #ffffff30;border-radius:12px;background:#22201b;color:#fff;cursor:pointer;font-size:32px;line-height:1}
+#ginx-upgrade-popup .gx-close:hover{background:#403020;border-color:#ffc459}
+#ginx-upgrade-popup .gx-close:focus-visible{outline:3px solid #ffc459;outline-offset:3px}
+#ginx-upgrade-popup .gx-content{padding:0 44px 40px}
+#ginx-upgrade-popup .gx-label{color:#f7ac3e;font-size:13px;font-weight:750;letter-spacing:.13em;line-height:1.5;margin:0 0 26px}
+#ginx-upgrade-popup h2{font-size:clamp(36px,8vw,62px);font-weight:800;letter-spacing:-.045em;line-height:1.15;margin:0 0 26px}
+#ginx-upgrade-popup h2 span{display:block}#ginx-upgrade-popup h2 span:first-child{background:linear-gradient(100deg,#ffd174,#f19a2d);background-clip:text;-webkit-background-clip:text;color:transparent;padding-bottom:6px}#ginx-upgrade-popup h2 span:last-child{color:#fff}
+#ginx-upgrade-popup .gx-intro{color:#acafb7;margin:0 0 22px;font-size:17px;line-height:1.7}
+#ginx-upgrade-popup .gx-notice{border-left:2px solid #f8ad34;padding-left:18px;margin:22px 0;font-size:17px;line-height:1.75}
+#ginx-upgrade-popup .gx-notice p{margin:0}#ginx-upgrade-popup .gx-notice p+p{margin-top:12px}#ginx-upgrade-popup strong{font-weight:750}#ginx-upgrade-popup a{color:#ffd06c;text-decoration:underline;text-underline-offset:3px}#ginx-upgrade-popup .gx-available{color:#ffd06c}#ginx-upgrade-popup .gx-thanks{color:#a1a4ac;font-size:16px;line-height:1.75;margin:26px 0 0}
+#ginx-upgrade-popup[lang^=zh] h2,#ginx-upgrade-popup[lang=ja] h2{letter-spacing:0}#ginx-upgrade-popup[lang=ru] h2,#ginx-upgrade-popup[lang=vi] h2{font-size:clamp(32px,4vw,48px)}
+@media(max-width:600px){#ginx-upgrade-popup .gx-content{padding:0 22px 28px}#ginx-upgrade-popup .gx-label{font-size:11px;margin-bottom:20px}#ginx-upgrade-popup .gx-notice,#ginx-upgrade-popup .gx-intro{font-size:15px}#ginx-upgrade-popup .gx-thanks{font-size:14px}#ginx-upgrade-popup h2{font-size:clamp(30px,8vw,44px);margin-bottom:22px}}
