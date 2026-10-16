@@ -1,4 +1,4 @@
-@font-face{font-family:Manrope;font-style:normal;font-weight:400 800;font-display:swap;src:url('/ginx/upgrade-assets/manrope.woff2') format('woff2')}
+@font-face{font-family:Manrope;font-style:normal;font-weight:400 800;font-display:swap;src:url('/upgrade-assets/manrope.woff2') format('woff2')}
 :root{--app-white-rgb:255,255,255;--app-accent-rgb:247,147,26;--app-accent-warm-rgb:255,170,63;--app-text-on-dark:#fff}
 html,body{margin:0;min-height:100%;background:#050608;color:#fff;font-family:Manrope,Arial,sans-serif}*{box-sizing:border-box}
 .maintenance .hero{min-height:100svh;padding:130px 0 100px;display:flex;align-items:center;background:radial-gradient(ellipse at 15% 5%,rgba(247,147,26,.15),transparent 34%),radial-gradient(ellipse at 94% 28%,rgba(111,51,40,.26),transparent 40%),linear-gradient(135deg,#050608,#08090c 60%,#0c0b0b);isolation:isolate}

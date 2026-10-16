@@ -3,10 +3,10 @@
   const data = window.GINX_SNAPSHOT;
   const blocked = /^(?:\/trading|\/trade|\/login|\/signup|\/register|\/user|\/auth|\/payment)(?:\/|$)/;
   window.ginxUpgradeHref = href => {
-    try { const u = new URL(href, location.origin); return blocked.test(u.pathname.replace(/^\/ginx(?=\/|$)/,"")) || u.pathname.replace(/^\/ginx(?=\/|$)/,"")==="/upgrade/" ? '/upgrade/' : href; }
+    try { const u = new URL(href, location.origin); return blocked.test(u.pathname) ? '/upgrade/' : href; }
     catch { return href; }
   };
-  if (blocked.test(location.pathname.replace(/^\/ginx(?=\/|$)/,""))) { location.replace('/ginx/upgrade/'); return; }
+  if (blocked.test(location.pathname)) { location.replace('/upgrade/'); return; }
   window.ginxSnapshotRequest = async req => {
     if (req.method && req.method !== 'GET') return {is_succ:false,code:503,message:'System upgrade in progress'};
     const path = new URL(req.url, location.origin).pathname.replace(/^\//,'');
@@ -36,9 +36,9 @@
     return result;
   };
   const push=history.pushState.bind(history), replace=history.replaceState.bind(history);
-  history.pushState=function(state,title,url){if(url && window.ginxUpgradeHref(url)==='/upgrade/') {location.assign('/ginx/upgrade/');return;} return push(state,title,url);};
-  history.replaceState=function(state,title,url){if(url && window.ginxUpgradeHref(url)==='/upgrade/') {location.replace('/ginx/upgrade/');return;} return replace(state,title,url);};
-  document.addEventListener('click',e=>{const a=e.target.closest?.('a');if(a && window.ginxUpgradeHref(a.href)==='/upgrade/'){e.preventDefault();e.stopImmediatePropagation();location.assign('/ginx/upgrade/');}},true);
+  history.pushState=function(state,title,url){if(url && window.ginxUpgradeHref(url)==='/upgrade/') {location.assign('/upgrade/');return;} return push(state,title,url);};
+  history.replaceState=function(state,title,url){if(url && window.ginxUpgradeHref(url)==='/upgrade/') {location.replace('/upgrade/');return;} return replace(state,title,url);};
+  document.addEventListener('click',e=>{const a=e.target.closest?.('a');if(a && window.ginxUpgradeHref(a.href)==='/upgrade/'){e.preventDefault();e.stopImmediatePropagation();location.assign('/upgrade/');}},true);
   const fetchLocal=window.fetch.bind(window);
   window.fetch=(input,init)=>{const url=new URL(typeof input==='string'?input:input.url,location.origin);if(url.origin!==location.origin)return Promise.reject(new Error('External requests disabled in static snapshot'));return fetchLocal(input,init);};
   document.addEventListener('DOMContentLoaded',()=>{
